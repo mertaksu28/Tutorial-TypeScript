@@ -1,35 +1,35 @@
-interface Product{
-    id:number
-    name:string
-    unitPrice:number
+interface Product {
+    id: number
+    name: string
+    unitPrice: number
 
 }
 
-function save(product:Product) {
-    console.log(product.name + " Kaydedildi");  
+function save(product: Product) {
+    console.log(product.name + " Kaydedildi");
 }
 
 
 
 class Product2 {
 
-    id:number
-    name:string
-    unitPrice:number
+    id: number
+    name: string
+    unitPrice: number
 }
 
-function save2(product:Product2) {
-    console.log(product.name + " Kaydedildi");  
+function save2(product: Product2) {
+    console.log(product.name + " Kaydedildi");
 }
 
-save({id:1 , name:"laptop", unitPrice:5000})
+save({ id: 1, name: "laptop", unitPrice: 5000 })
 
 let mouse = new Product2()
-mouse.name="A4Tech"
+mouse.name = "A4Tech"
 save2(mouse)
 
-interface PersonService{
-    save():void
+interface PersonService {
+    save(): void
 }
 
 class CustomerService implements PersonService {
